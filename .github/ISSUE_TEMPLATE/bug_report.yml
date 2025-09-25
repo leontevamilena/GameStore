@@ -4,9 +4,9 @@ title: "[Bug]: "
 labels: ["bug", "triage"]
 body:
   - type: textarea
-    id: идентификатор поля ввода
+    id: description
     attributes:
-      label: подпись поля
+      label: Описание дефекта
       description: описание
       placeholder: подсказка
     validations:
