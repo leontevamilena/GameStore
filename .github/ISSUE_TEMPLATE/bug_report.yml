@@ -55,12 +55,12 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: bud-type
+    id: bug-type
     attributes:
       label: BugType
       description: What category does the problem belong to?
       options:
-        - Fubctional
+        - Functional
         - UI
         - Localization
         - Performance
@@ -71,8 +71,7 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Code pf Conduct
+      label: Code of Conduct
       description: By submitting this issue, you agree to follow our terms.
       options:
         - label: I agree to follow this project's Code of Conduct
-      required: true
