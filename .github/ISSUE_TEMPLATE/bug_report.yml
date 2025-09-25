@@ -2,3 +2,12 @@ name: Defect report
 description: File a bug report
 title: "[Bug]: "
 labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: идентификатор поля ввода
+    attributes:
+      label: подпись поля
+      description: описание
+      placeholder: подсказка
+    validations:
+      required: true #поле обязательно для заполнения
