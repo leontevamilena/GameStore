@@ -3,11 +3,82 @@ description: File a bug report
 title: "[Bug]: "
 labels: ["bug"]
 body:
-  - type: input
-    id: description
+  - type: textarea
+    id: what-happened
     attributes:
-      label: Описание дефекта
-      description: описание
-      placeholder: подсказка
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
-      required: true #поле обязательно для заполнения
+      required: true
+
+  - type: textarea
+    id: placement
+    attributes:
+      label: Placement
+      description: Where is a bug located?
+      placeholder: Location of the bug
+    validations:
+      required: false
+
+  - type: textarea
+    id: suggestions
+    attributes:
+      label: Suggestions
+      description: Suggest your solution to the problem?
+      placeholder: Write a correction here
+      value: "correction"
+    validations:
+      required: false
+      
+  - type: dropdown
+    id: seriousness
+    attributes:
+      label: Seriousness
+      description: How serious is the problem?
+      options:
+        - Blocker
+        - Critical
+        - Major
+        - Trivial
+        - Enhancement
+    validations:
+      required: true
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: In what order should the bugs be fixed? 
+      options:
+        - Critical
+        - High
+        - Medium
+        - Low
+    validations:
+      required: true
+
+  - type: dropdown
+    id: bud-type
+    attributes:
+      label: BugType
+      description: What category does the problem belong to?
+      options:
+        - Fubctional
+        - UI
+        - Localization
+        - Performance
+        - Security
+        - Other
+    validations:
+      required: true
+
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code pf Conduct
+      description: By submitting this issue, you agree to follow our terms.
+      options:
+        - label: I agree to follow this project's Code of Conduct
+      required: true
