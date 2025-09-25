@@ -3,7 +3,7 @@ description: File a bug report
 title: "[Bug]: "
 labels: ["bug"]
 body:
-  - type: dropdown
+  - type: textarea
     id: description
     attributes:
       label: Описание дефекта
