@@ -12,7 +12,6 @@ body:
       value: "A bug happened!"
     validations:
       required: true
-
   - type: textarea
     id: placement
     attributes:
@@ -21,7 +20,6 @@ body:
       placeholder: Location of the bug
     validations:
       required: false
-
   - type: textarea
     id: suggestions
     attributes:
@@ -31,7 +29,6 @@ body:
       value: "correction"
     validations:
       required: false
-      
   - type: dropdown
     id: seriousness
     attributes:
@@ -45,7 +42,6 @@ body:
         - Enhancement
     validations:
       required: true
-
   - type: dropdown
     id: priority
     attributes:
@@ -58,7 +54,6 @@ body:
         - Low
     validations:
       required: true
-
   - type: dropdown
     id: bud-type
     attributes:
@@ -73,7 +68,6 @@ body:
         - Other
     validations:
       required: true
-
   - type: checkboxes
     id: terms
     attributes:
