@@ -1,5 +1,6 @@
 name: Defect report
 description: File a bug report
+label: Добавьте название
 title: "[Bug]: "
 labels: ["bug"]
 body:
