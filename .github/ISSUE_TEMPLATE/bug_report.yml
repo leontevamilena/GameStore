@@ -1,13 +1,12 @@
 name: Defect report
 description: File a bug report
-label: Добавьте название
 title: "[Bug]: "
 labels: ["bug"]
 body:
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
+      label: что
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
     validations:
