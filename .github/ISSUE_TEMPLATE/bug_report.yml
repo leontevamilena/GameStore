@@ -27,25 +27,17 @@ body:
       placeholder: Вариант решения.
     validations:
       required: false
-  - type: photo
-    id: suggestions
-    attributes:
-      label: Решение проблемы. 
-      description: Предложите свой вариант решения проблемы.
-      placeholder: Вариант решения.
-    validations:
-      required: false
   - type: dropdown
     id: seriousness
     attributes:
-      label: Seriousness
-      description: How serious is the problem?
+      label: Серьёзность
+      description: Насколько серьёзна проблема?
       options:
-        - Blocker
-        - Critical
-        - Major
-        - Trivial
-        - Enhancement
+        - -
+        - Критическая
+        - Высокая
+        - Средняя
+        - Низкая
     validations:
       required: true
   - type: dropdown
