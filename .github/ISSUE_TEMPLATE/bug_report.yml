@@ -6,25 +6,33 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: что
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-    validations:
+      label: Что случилось?
+      description: Опишите пролему.
+      placeholder: Опишите здесь!
+    validations: 
       required: true
   - type: textarea
     id: placement
     attributes:
-      label: Placement
-      description: Where is a bug located?
-      placeholder: Location of the bug
+      label: Шаги воспроизведения
+      description: Расскажите, что вы сделали для обнаружения ошибки?
+      placeholder: Описание действий.
     validations:
       required: false
   - type: textarea
     id: suggestions
     attributes:
-      label: Suggestions
-      description: Suggest your solution to the problem?
-      placeholder: Write a correction here
+      label: Решение проблемы. 
+      description: Предложите свой вариант решения проблемы.
+      placeholder: Вариант решения.
+    validations:
+      required: false
+    - type: photo
+    id: suggestions
+    attributes:
+      label: Решение проблемы. 
+      description: Предложите свой вариант решения проблемы.
+      placeholder: Вариант решения.
     validations:
       required: false
   - type: dropdown
