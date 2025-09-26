@@ -27,7 +27,7 @@ body:
       placeholder: Вариант решения.
     validations:
       required: false
-    - type: photo
+  - type: photo
     id: suggestions
     attributes:
       label: Решение проблемы. 
