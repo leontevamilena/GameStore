@@ -22,7 +22,7 @@ body:
   - type: textarea
     id: suggestions
     attributes:
-      label: Решение проблемы. 
+      label: Решение проблемы
       description: Предложите свой вариант решения проблемы.
       placeholder: Вариант решения.
     validations:
@@ -43,33 +43,33 @@ body:
   - type: dropdown
     id: priority
     attributes:
-      label: Priority
-      description: In what order should the bugs be fixed? 
+      label: Приоритет
+      description: Какой приоритет имеет ошибка?
       options:
-        - Critical
-        - High
-        - Medium
-        - Low
+        - -
+        - Высокий
+        - Средний
+        - Низкий
     validations:
       required: true
   - type: dropdown
     id: bug-type
     attributes:
-      label: BugType
-      description: What category does the problem belong to?
+      label: Тип ошибки
+      description: К какой категории относится ошибка?
       options:
-        - Functional
-        - UI
-        - Localization
-        - Performance
-        - Security
-        - Other
+        - Функциональная
+        - Пользовательский интерфейс
+        - Локализации
+        - Производительности
+        - Безопасности
+        - Другие
     validations:
       required: true
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our terms.
+      label: Условия соглашения
+      description: Отправляя этот вопрос, вы соглашаетесь следовать нашим условиям.
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: Я согласен следовать условиям этого проекта.
